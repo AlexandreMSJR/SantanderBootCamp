@@ -21,5 +21,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    width: 60%;
+    height: 100vh;
+}
+
+.instragram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instragram-phone img {
+    height: 50rem;
 }

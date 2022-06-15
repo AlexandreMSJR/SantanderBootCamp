@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contador</title>
 </head>
+
 <body>
     <h1>Contador</h1>
-    <p>Clique nos botões para alterar o valor.</p>
-    <div id="counter">
-        <button id="subtrair" onclick="decrement()">-</button>
-        <span id="currentNumber">0</span>
-        <button id="adicionar" onclick="increment()">+</button>
-        <script src="js/scripts.js"></script>
+    <div id="central">
+
+        <p>Clique nos botões para alterar o valor. (Original)</p>
+        <div id="sub-central">
+            <button id="subtrair" onclick="decrement()">-</button>
+            <span id="currentNumber">0</span>
+            <button id="adicionar" onclick="increment()">+</button>
+            <script src="js/scripts.js"></script>
+        </div>
+
+        <p>Contador usando addEventListener</p>
+        <div id="sub-central">
+            <button id="subtrair2">-</button>
+            <span id="currentNumberAdd">0</span>
+            <button id="adicionar2">+</button>
+            <script src="js/scripts2.js"></script>
+        </div>
+
+        <p>Contador de 0 a 10</p>
+        <div id="sub-central">
+            <button id="subtrair3" onclick="decrement3()">-</button>
+            <span id="currentNumberLimit">0</span>
+            <button id="adicionar3" onclick="increment3()">+</button>
+        </div>
+        <p>Contador com negativos em vermelho e limite até 10</p>
+        <div id="sub-central">
+            <button id="subtrair4" onclick="decrement4()">-</button>
+            <span id="currentNumberNeg">0</span>
+            <button id="adicionar4" onclick="increment4()">+</button>
+        </div>
     </div>
 </body>
+
 </html>

@@ -30,12 +30,20 @@ button:disabled {
     border-color: gray;
 }
 
-
-#counter {
+#central {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#currentNumber {
+#sub-central {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+#currentNumber #currentNumberAdd #currentNumberLimit #currentNumberNeg {
     display: flex;
     align-items: center;
     margin: 0 20px;

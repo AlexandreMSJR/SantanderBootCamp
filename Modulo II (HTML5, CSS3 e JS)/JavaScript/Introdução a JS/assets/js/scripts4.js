@@ -1,0 +1,1 @@
+// incriment e decrement 4 - Mude a cor do texto em CURRENT_NUMBER para vermelho quando o número for negativo. (currentNumberNeg)

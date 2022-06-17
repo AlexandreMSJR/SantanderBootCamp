@@ -38,16 +38,22 @@ let currentNumberLimit = document.getElementById("currentNumberLimit")
 let adc = 0
 
 function increment2() {
-    if (adc > 9)
-        return
-    adc = adc + 1
-    currentNumberLimit.innerHTML = adc
+    if (adc < 10) {
+        adc = adc + 1
+        currentNumberLimit.innerHTML = adc
+    } else {
+        alert("Maior valor é 10.")
+    }
 }
 
 function decrement2() {
-    if (adc >= 1)
+    if (adc > 0) {
         adc = adc - 1
-    currentNumberLimit.innerHTML = adc
+        currentNumberLimit.innerHTML = adc
+    } else {
+        alert("Menor valor é 0.")
+    }
+
 }
 
 // incriment e decrement 4 - Mude a cor do texto em CURRENT_NUMBER para vermelho quando o número for negativo. (currentNumberNeg)
@@ -56,14 +62,24 @@ let currentNumberNeg = document.getElementById("currentNumberNeg")
 let value = 0
 
 function increment3() {
-    value = value + 1
-    currentNumberNeg.innerHTML = value
+    if (value < 10) {
+        value = value + 1
+        currentNumberNeg.innerHTML = value 
+        if (value >= 0) {
+            currentNumberNeg.style.color = "black" 
+        } 
+    } else { 
+        alert("Valor máximo é 10.")      
+    }
 }
 
 function decrement3() {
-    let ver = currentNumberNeg.style.color="red"
+    if (value > -10) {
         value = value - 1
         currentNumberNeg.innerHTML = value
-    if (value < 0 )
-        return ver - 1
+        if (value < 0)
+            currentNumberNeg.style.color = "red"
+    } else {
+        alert("Menor valor é -10.")
+    }
 }

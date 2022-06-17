@@ -1,31 +1,31 @@
 let currentNumberWrapper = document.getElementById("currentNumber")
 let currentNumber = 0
 
-function increment () {
+function increment() {
     currentNumber = currentNumber + 1;
     currentNumberWrapper.innerHTML = currentNumber;
 }
 
-function decrement () {
+function decrement() {
     currentNumber = currentNumber - 1;
     currentNumberWrapper.innerHTML = currentNumber;
 }
 
 // Adicionando os eventos// incriment e decrement 2 - tente implementar os eventos usando o método addEventListener (currentNumberAdd)
 
-let adicionar2html = document.getElementById("adicionar2")
-let subtrair2html = document.getElementById("subtrair2")
+let adicionar2 = document.getElementById("adicionar2")
+let subtrair2 = document.getElementById("subtrair2")
 let currentNumberAdd = document.getElementById("currentNumberAdd")
 
-adicionar2html.addEventListener("click", soma)
-subtrair2html.addEventListener("click", sub)
+adicionar2.addEventListener("click", soma)
+subtrair2.addEventListener("click", sub)
 
 function soma() {
     let count = parseInt(currentNumberAdd.innerHTML) + 1
     currentNumberAdd.innerText = count
 }
 
-function sub () {
+function sub() {
     let count = parseInt(currentNumberAdd.innerHTML) - 1
     currentNumberAdd.innerText = count
 }
@@ -51,3 +51,19 @@ function decrement2() {
 }
 
 // incriment e decrement 4 - Mude a cor do texto em CURRENT_NUMBER para vermelho quando o número for negativo. (currentNumberNeg)
+
+let currentNumberNeg = document.getElementById("currentNumberNeg")
+let value = 0
+
+function increment3() {
+    value = value + 1
+    currentNumberNeg.innerHTML = value
+}
+
+function decrement3() {
+    let ver = currentNumberNeg.style.color="red"
+        value = value - 1
+        currentNumberNeg.innerHTML = value
+    if (value < 0 )
+        return ver - 1
+}

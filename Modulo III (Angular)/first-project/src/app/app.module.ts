@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
-import { MarcaTextoDirective } from './directives/marca-texto.directive';
+import { MarcaTextoDirective } from './shared/directives/marca-texto.directive';
 
 @NgModule({
   declarations: [

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RodarAplicacaoDeHeranca",
+            "request": "launch",
+            "mainClass": "RodarAplicacaoDeHeranca",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Heranca",
+            "request": "launch",
+            "mainClass": "Heranca",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch RodarAplicacao",
+            "request": "launch",
+            "mainClass": "RodarAplicacao",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch CalculadoraDeMedias",
             "request": "launch",
             "mainClass": "CalculadoraDeMedias",

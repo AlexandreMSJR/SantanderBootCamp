@@ -1,2 +1,9 @@
-package com.springboot.spring.repository;public class UserRepository {
+package com.springboot.spring.repository;
+
+import com.springboot.spring.controller.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public class UserRepository extends JpaRepository<User, Integer> {
+    @Query()
 }
